@@ -1,0 +1,12 @@
+body{
+    background: none;
+    &:hover {
+        background: red;
+    }
+    max-width: 100%;
+    font-size: large;
+    .box {
+         width:  auto;
+    } 
+}
+

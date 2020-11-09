@@ -1,0 +1,14 @@
+body {
+  background: none;
+  max-width: 100%;
+  font-size: large;
+}
+
+body:hover {
+  background: red;
+}
+
+body .box {
+  width: auto;
+}
+/*# sourceMappingURL=style.css.map */
