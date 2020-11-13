@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="960" fill="none" viewBox="0 0 1280 960">
+    <path fill="url(#prefix__pattern0)" d="M0 0h1280v960H0V0z"/>
+    <path fill="#E6DB74" d="M0 0h1280v960H0V0z"/>
+    <defs>
+        <pattern id="prefix__pattern0" width="1" height="1" patternContentUnits="objectBoundingBox">
+            <use transform="matrix(.0003 0 0 .0004 -.125 0)" xlink:href="#prefix__image0"/>
+        </pattern>
+    </defs>
+</svg>

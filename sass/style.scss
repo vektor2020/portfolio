@@ -1,1 +1,35 @@
-@import "_reset"                            
+@import '_reset';
+@import '_var';
+
+body{
+    font-size: $text-size;
+    background: $bg-color;
+}
+.wrapper {
+    padding: $gap;
+    min-height: 100vh;
+}
+.head-block {
+    height: $gap;
+    position: fixed;
+    background: $bg-color;
+    top: 0;
+    left: 0;
+}
+.menu {
+	width: $gap;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	transition: translateY(50%);
+}
+.links {
+	width: $gap;
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
