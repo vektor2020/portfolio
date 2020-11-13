@@ -133,3 +133,61 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.hero {
+  width: 100%;
+  background: #e6db74;
+  height: calc(100vh - 160px);
+  margin: 0 0 80px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero:before {
+  content: "";
+  width: 50%;
+  background: #F5F5F5;
+  height: calc(100vh - 160px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 10;
+}
+
+.hero .info {
+  opacity: 0;
+  display: none;
+}
+
+.hero:hover:before {
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: opacity 4s, -webkit-transform 2s;
+  transition: opacity 4s, -webkit-transform 2s;
+  transition: opacity 4s, transform 2s;
+  transition: opacity 4s, transform 2s, -webkit-transform 2s;
+}
+
+.hero:hover .info {
+  display: block;
+  opacity: 1;
+}
+
+.hero:hover .welcome {
+  opacity: 0;
+  display: none;
+}
