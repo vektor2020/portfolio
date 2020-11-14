@@ -3,7 +3,8 @@
 
 body{
     font-size: $text-size;
-    background: $bg-color;
+	background: $bg-color;
+	font-family: 'Roboto', sans-serif;
 }
 .wrapper {
     padding: $gap;
@@ -14,7 +15,10 @@ body{
     position: fixed;
     background: $bg-color;
     top: 0;
-    left: 0;
+	left: 0;
+	padding: 43px 80px 16px;
+	font-size: 18px;
+	color: $main-text;
 }
 .menu {
 	width: $gap;
@@ -27,11 +31,15 @@ body{
 	width: $gap;
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -28px;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	&-list {
+	height: 28px;
+	margin-top: 16px;
+	}
 }
 .hero {
 	width: 100%;
@@ -74,5 +82,11 @@ body{
 			opacity: 0;
 			display: none;
 		}
+	}
+}
+.paralax {
+	&-pic {
+		width: 100%;
+		
 	}
 }
