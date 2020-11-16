@@ -19,6 +19,8 @@ body{
 	padding: 43px 80px 16px;
 	font-size: 18px;
 	color: $main-text;
+	min-width: 100%;
+	z-index: 999;
 }
 .menu {
 	width: $gap;
