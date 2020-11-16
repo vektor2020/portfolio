@@ -85,8 +85,31 @@ body{
 	}
 }
 .paralax {
-	&-pic {
-		width: 100%;
+}
+.information {
+	background: $bg-section;
+	padding: $gap;
+	display: block;
+	color: $main-text;
+	.title {
+		font-size: 80px;
+		font-weight: 900;
+		}
+	}
+	.infortioman-list{
+	&-item{
+		margin-top: 32px;
+		position: relative;
+		}
+	&-item::after {
+		content: " ";
+		position: absolute;
+		top: 33%;
+		left: 50%;
+		width: 14px;
+		height: 14px;
+		background: $brend-color;
+		border-radius: 50%;
 		
 	}
-}
+	}

@@ -201,6 +201,30 @@ body {
   display: none;
 }
 
-.paralax-pic {
-  width: 100%;
+.information {
+  background: #f5f5f5;
+  padding: 80px;
+  display: block;
+  color: #272822;
+}
+
+.information .title {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.infortioman-list-item {
+  margin-top: 32px;
+  position: relative;
+}
+
+.infortioman-list-item::after {
+  content: " ";
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  width: 14px;
+  height: 14px;
+  background: #f92672;
+  border-radius: 50%;
 }
