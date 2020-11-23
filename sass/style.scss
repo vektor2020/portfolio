@@ -93,7 +93,7 @@ body{
 			font-size: 80px;
 			font-weight: 900;
 			line-height: normal;
-			margin: 0 auto;
+			
 			&::after{
 				content: "";
 				background-color: $brend-color;
@@ -110,8 +110,23 @@ body{
 		opacity: 0;
 		display: none;
 		max-width: 600px;
-		max-height: 218px;
-
+		max-height: 215px;
+		position: relative;
+		left: -25%;
+		&-title {
+			display: block;
+			color: $brend-color;
+			font-style: $brend-text-st;
+			font-size: $brend-text-sz;
+			margin-bottom: 8px;
+		}
+		&-sub {
+			font-weight: 900;
+			color: $main-text;
+		}
+		&-text {
+			margin-top: 20px;
+		}
 	}
 	&:hover {
 		&:before {

@@ -210,7 +210,6 @@ body {
   font-size: 80px;
   font-weight: 900;
   line-height: normal;
-  margin: 0 auto;
 }
 
 .hero-text .welcome::after {
@@ -226,7 +225,26 @@ body {
   opacity: 0;
   display: none;
   max-width: 600px;
-  max-height: 218px;
+  max-height: 215px;
+  position: relative;
+  left: -25%;
+}
+
+.hero .info-title {
+  display: block;
+  color: #f92672;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hero .info-sub {
+  font-weight: 900;
+  color: #272822;
+}
+
+.hero .info-text {
+  margin-top: 20px;
 }
 
 .hero:hover:before {
