@@ -111,6 +111,31 @@ body {
   color: #272822;
   min-width: 100%;
   z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-theme {
+  font-size: 18px;
+  color: #272822;
+  background: #fff;
+  display: inline-block;
+}
+
+.btn-theme .wt, .btn-theme .bt {
+  color: #272822;
+}
+
+.btn-theme .wt {
+  border-right: #272822 1px;
+}
+
+.btn-theme .bt:hover, .btn-theme .wt:hover {
+  color: #f92672;
 }
 
 .menu {
@@ -178,9 +203,30 @@ body {
   z-index: 10;
 }
 
+.hero-text .welcome {
+  display: block;
+  max-width: 378px;
+  max-height: 188px;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0 auto;
+}
+
+.hero-text .welcome::after {
+  content: "";
+  background-color: #f92672;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+
 .hero .info {
   opacity: 0;
   display: none;
+  max-width: 600px;
+  max-height: 218px;
 }
 
 .hero:hover:before {
@@ -201,6 +247,11 @@ body {
 .hero:hover .welcome {
   opacity: 0;
   display: none;
+}
+
+.paralax {
+  height: 100vh;
+  background: url("../img/Depositphotos_156974368_xl-2015 1.svg") 0 0 no-repeat fixed;
 }
 
 .information {

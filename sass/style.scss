@@ -21,6 +21,26 @@ body{
 	color: $main-text;
 	min-width: 100%;
 	z-index: 999;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.btn-theme {
+	 
+		font-size: 18px;
+	color: $main-text;
+	background: $bg-color;
+	display: inline-block;
+	
+	.wt, .bt {
+		color: $main-text;
+	}
+	.wt {
+		border-right: $main-text 1px;
+	}
+	.bt:hover, .wt:hover {
+		color: $brend-color;
+		}
 }
 .menu {
 	width: $gap;
@@ -43,6 +63,7 @@ body{
 	margin-top: 16px;
 	}
 }
+
 .hero {
 	width: 100%;
 	background: $primary-color;
@@ -65,10 +86,32 @@ body{
 	&-text {
 		position: relative;
 		z-index: 10;
+		.welcome {
+			display: block;
+			max-width: 378px;
+			max-height: 188px;
+			font-size: 80px;
+			font-weight: 900;
+			line-height: normal;
+			margin: 0 auto;
+			&::after{
+				content: "";
+				background-color: $brend-color;
+				border-radius: 50%;
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+			}
+		}
+		
+
 	}
 	.info {
 		opacity: 0;
 		display: none;
+		max-width: 600px;
+		max-height: 218px;
+
 	}
 	&:hover {
 		&:before {
@@ -87,6 +130,8 @@ body{
 	}
 }
 .paralax {
+	height: 100vh;
+	background: url('../img/Depositphotos_156974368_xl-2015\ 1.svg') 0 0 no-repeat fixed;
 }
 .information {
 	background: $bg-section;
