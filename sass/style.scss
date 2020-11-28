@@ -26,7 +26,6 @@ body{
 	
 }
 .btn-theme {
-	 
 		font-size: 18px;
 	color: $main-text;
 	background: $bg-color;
@@ -47,8 +46,46 @@ body{
 	position: fixed;
 	top: 50%;
 	left: 0;
-	transition: translateY(50%);
+	
+	z-index: 999;
+	.btn-burger {
+		display: block;
+		width: 70px;
+		height: 30px;
+		position: relative;
+		right: -50px;
+		background: none;
+		
+	}
+	.btn-burger span {
+		position: absolute;
+		background-color: black;
+		height: 4px;
+		width: 100%;
+		top: 13px;
+		left: 0;
+		transition: 1s;
+	}
+	.btn-burger::before,
+	.btn-burger::after {
+		content: "";
+		position: absolute;
+		background: black;
+		height: 4px;
+		width: 100%;
+		left: 0;
+	}
+	.btn-burger::before {
+		top: 0;
+	}
+	.btn-burger::after {
+		bottom: 0;
+	}
+	.btn-burger:hover span {
+			left: 30px;
+	}
 }
+
 .links {
 	width: $gap;
 	position: fixed;
@@ -63,7 +100,20 @@ body{
 	margin-top: 16px;
 	}
 }
-
+.info-title {
+	display: block;
+	color: $brend-color;
+	font-style: $brend-text-st;
+	font-size: $brend-text-sz;
+	margin-bottom: 8px;
+}
+.info-sub {
+	font-weight: 900;
+	color: $main-text;
+}
+.info-text {
+	margin-top: 20px;
+}
 .hero {
 	width: 100%;
 	background: $primary-color;
@@ -73,6 +123,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 	&:before {
 		content: "";
 		width: 50%;
@@ -103,8 +154,6 @@ body{
 				display: inline-block;
 			}
 		}
-		
-
 	}
 	.info {
 		opacity: 0;
@@ -113,25 +162,13 @@ body{
 		max-height: 215px;
 		position: relative;
 		left: -25%;
-		&-title {
-			display: block;
-			color: $brend-color;
-			font-style: $brend-text-st;
-			font-size: $brend-text-sz;
-			margin-bottom: 8px;
-		}
-		&-sub {
-			font-weight: 900;
-			color: $main-text;
-		}
-		&-text {
-			margin-top: 20px;
-		}
+		transition: opacity 1s;
 	}
+	
 	&:hover {
 		&:before {
 			opacity: 0;
-			transform: translateY(100%);
+			transform: translatex(100%);
 			transition: opacity 4s, transform 2s;
 		}
 		.info {
@@ -145,33 +182,65 @@ body{
 	}
 }
 .paralax {
-	height: 100vh;
-	background: url('../img/Depositphotos_156974368_xl-2015\ 1.svg') 0 0 no-repeat fixed;
-}
+	background: url('../img/Depositphotos_156974368_xl-2015\ 1.svg') center/cover no-repeat fixed;
+	height: calc(100vh - 160px);
+	}
+
 .information {
 	background: $bg-section;
 	padding: $gap;
 	display: block;
 	color: $main-text;
+	margin-top: $gap;
+	
 	.title {
 		font-size: 80px;
 		font-weight: 900;
 		}
 	}
 	.infortioman-list{
+		
+		&:hover &-item::after{
+			display: block;
+			width: 100%;
+			transform: scaleX(1);
+			
+		}
 	&-item{
 		margin-top: 32px;
 		position: relative;
+		overflow: hidden;
+		&:nth-child(1) {
+			width: 90%;}
+		&:nth-child(2) {
+			width: 80%;}
+		&:nth-child(3) {
+			width: 50%;}
+		&:nth-child(4) {
+			width: 60%;}
+		&:nth-child(5) {
+			width: 80%;}
+		&:nth-child(6) {
+			width: 70%;}
+		&:nth-child(7) {
+			width: 80%;}			
 		}
 	&-item::after {
 		content: " ";
+		display: block;
 		position: absolute;
 		top: 33%;
-		left: 50%;
+		left: 300px;
 		width: 14px;
 		height: 14px;
 		background: $brend-color;
-		border-radius: 50%;
+		border-radius: 10px;
+		transition: 2s;
 		
 	}
 	}
+.projects {
+	.title {}
+	.text-list{}
+	
+}
