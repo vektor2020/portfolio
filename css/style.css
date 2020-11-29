@@ -383,3 +383,29 @@ body {
   -webkit-transition: 2s;
   transition: 2s;
 }
+
+.projects .block {
+  height: 100vh;
+  background: url("../img/Group 11.png") center/cover no-repeat fixed;
+  position: relative;
+}
+
+.projects .block::before {
+  content: "";
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #353535;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  display: none;
+}
+
+.projects .block::before:hover {
+  display: block;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}

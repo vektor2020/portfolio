@@ -239,8 +239,35 @@ body{
 		
 	}
 	}
+
 .projects {
+	.block {
+		height: 100vh;
+		background: url('../img/Group\ 11.png') center/cover no-repeat fixed;
+		position: relative;
+		
 	.title {}
-	.text-list{}
-	
+	.text-list{
+		.info-sub var {}
+		.info-text var {}
+		.info-title var {}
+	}
+	&::before {
+		content: "";
+		height: 100vh;
+		top: 0;
+		left: 0;
+		position: absolute;
+		background: $bg-hover;
+		transition: 2s ;
+		transform: scale(0);
+		display: none;
+	&:hover {
+		display: block;
+		
+		transform: scale(1);
+	}
 }
+}
+}
+
