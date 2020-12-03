@@ -107,6 +107,7 @@ body{
 	font-size: $brend-text-sz;
 	margin-bottom: 8px;
 }
+
 .info-sub {
 	font-weight: 900;
 	color: $main-text;
@@ -239,35 +240,48 @@ body{
 		
 	}
 	}
-
-.projects {
-	.block {
-		height: 100vh;
+	.paralax-group {
+		height: calc(100vh - 160px);
 		background: url('../img/Group\ 11.png') center/cover no-repeat fixed;
-		position: relative;
-		
-	.title {}
-	.text-list{
-		.info-sub var {}
-		.info-text var {}
-		.info-title var {}
-	}
-	&::before {
-		content: "";
-		height: 100vh;
-		top: 0;
-		left: 0;
-		position: absolute;
-		background: $bg-hover;
-		transition: 2s ;
-		transform: scale(0);
-		display: none;
-	&:hover {
 		display: block;
+		margin-top: $gap;
+}
+.projects {
+	margin-top: $gap;
+	padding: $gap;
+	height: 100%;
+	display: block;
+	background: $bg-hover;
+	.title {
+		color: $primary-color;
+		font-size: 80px;
+		font-weight: 900;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+	}
+	.text-list{
+		.info-sub-var {
+			color: $bg-color;
+		}
+		.info-text-var {
+			color: $bg-section;
+		}
 		
-		transform: scale(1);
+}
+.info-title-var{
+	position: relative;
+	width: 80px;
+	.arrow {
+	position: absolute;
+	bottom: 7px;
+	left: 60px;
+	}
+	&:hover {
+		text-decoration: underline;
 	}
 }
 }
-}
+
 
